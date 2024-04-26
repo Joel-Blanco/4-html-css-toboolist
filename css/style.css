@@ -4,6 +4,8 @@
     box-sizing:border-box;
 }
 
+/*\\\ELEMENT-VALUES\\\*/
+
 body {
     background-color:#f6f8f9;
     font-family:Arial, Helvetica, sans-serif;
@@ -16,22 +18,13 @@ header {
     margin-bottom: 40px;
 }
 
-.top-section {
-    height:50px;
-    border-bottom: 4px solid #f6f8f9;
-    padding:0 20px;
-    line-height: 50px;
-}
-
-.list-section {
-    padding:20px 50px;
-}
-
 li {
-list-style: none;
-padding: 10px 0px;
-color:#434851;
+    list-style: none;
+    padding: 10px 0px;
+    color:#434851;
 }
+
+/*\\\CONTAINER-PART\\\*/
 
 .container {
     width:70%;
@@ -39,6 +32,13 @@ color:#434851;
     border-radius:5px;
     background-color: #ffffff;
 }
+.top-section {
+    height:50px;
+    border-bottom: 4px solid #f6f8f9;
+    padding:0 20px;
+    line-height: 50px;
+}
+/*\\\BUTTONS\\\*/
 
 .btn {
     padding: 5px 10px;
@@ -56,18 +56,25 @@ color:#434851;
     border: 1px solid #c4cbd0;
 }
 
+/*\\\LIST\\\*/
+
+.list-section {
+    padding:20px 50px;
+}
+
+
 li h3::before {
     content:'\25BE';
 }
 
-li .circle{
-    border-bottom:1px solid #f6f8f9;
-}
+/*\\\CIRCLES\\\*/
+
 li .circle.checked::before {
     content:'\2713';
     border:1px solid #2cc6ab;
     color:#2cc6ab;
 }
+
 li .circle.delete::before {
     content:'\2573';
     border:1px solid #ff0000;
@@ -85,3 +92,35 @@ li .circle::before {
     text-align:center;
 }
 
+/*\\\TAGS\\\*/
+
+.tag {
+    padding:5px 10px;
+    border-radius:10px;
+    font-size:10px;
+    color:#ffffff;
+}
+
+.tag-type-1{
+    background-color:#09a9ed;
+}
+
+.tag-type-3{
+    background-color:#2cc6ab;
+}
+
+.tag-type-2{
+    background-color:#ab5de6;
+}
+
+.tag-type-4{
+    background-color:#ff9b00;
+}
+
+.tag-type-5{
+    background-color:#ec4a9d;
+}
+
+.tag-type-6{
+    background-color:#a3d116;
+}
